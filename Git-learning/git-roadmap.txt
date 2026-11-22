@@ -1,0 +1,16 @@
+Day	Topic
+1	Git installation, configuration and repository setup Done
+2	Git status, log and commit history Done
+3	Git add, staging and commit Done
+4	Git push, authentication and remote repositories
+5	Git pull, fetch and clone
+6	Branching, checkout and switch
+7	Merge and merge conflicts
+8	Pull requests and code reviews
+9	README, .gitignore and Git tags
+10	Git stash, reset and revert
+11	GitHub Issues and Projects
+12	GitHub Actions and CI/CD
+13	YAML, workflow automation and GitHub Secrets
+14	Forking, open-source contribution and releases
+15	Final IT automation project and GitHub portfolio
