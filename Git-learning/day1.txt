@@ -9,3 +9,165 @@ Clone	Downloads an entire repository
 Branch	Creates a separate workspace for changes
 Merge	Combines changes from different branches
 Pull Request	Requests to merge your changes into another branch
+
+
+Day 1 – Git & GitHub Fundamentals
+Day 1 learning notes
+ Beginner level
+
+
+Today's objective: Understand Git, GitHub, repositories, local setup, and how to create your first Git repository.
+1. Important Git terms
+1. Git
+Meaning: Git is a version control system that tracks changes made to files over time.
+
+Technical example:
+
+Imagine you're developing a PowerShell script to automate disk-space monitoring.
+- Monday: You create the script.
+- Tuesday: You improve the script.
+- Wednesday: You accidentally break the script.
+Git helps you track these changes and return to an earlier version.
+2. GitHub
+Meaning: GitHub is an online platform where you can store Git repositories and collaborate with other people.
+
+Technical example:
+
+You create a Python automation script on your Mac and upload it to GitHub.
+
+Your colleagues can access the code, review it, and contribute changes.
+
+Git is the version control tool. GitHub is an online platform that hosts Git repositories.
+3. Repository (Repo)
+Meaning: A repository is a project folder that Git tracks, including its files and change history.
+
+Technical example:
+
+Your GitHub project:
+
+IT-Learning-and-Automation
+
+It contains:
+IT-Learning-and-Automation/
+│
+├── Python/
+│   └── hello.py
+│
+├── PowerShell/
+│
+├── Bash/
+│
+└── README.md
+
+
+This entire project is called a repository.
+4. Local Repository
+Meaning: A copy of your Git repository stored on your computer.
+
+Technical example:
+
+You clone your GitHub project onto your Mac.
+git clone https://github.com/shehzan359/IT-Learning-and-Automation.git
+
+
+You can now work on the project locally, even without an internet connection.
+5. Remote Repository
+Meaning: A repository hosted on a remote server, such as GitHub.
+
+Technical example:
+
+Your project exists on GitHub:
+
+https://github.com/shehzan359/IT-Learning-and-Automation
+
+This is your remote repository.
+6. Clone
+Meaning: Downloads a remote repository and creates a local working copy.
+
+Command:
+git clone REPOSITORY_URL
+
+
+Technical example:
+
+A teammate creates a repository containing IT automation scripts. You clone it to your Mac to work on those scripts.
+7. Git Configuration
+Meaning: Sets the name and email address Git uses to identify you as the author of commits.
+
+Commands:
+git config --global user.name "Your Name"
+git config --global user.email "your-email@example.com"
+
+
+Check your configuration:
+git config --global --list
+
+
+Technical example: When you commit a new PowerShell script, Git records the configured author name and email with the commit.
+8. Authentication
+Meaning: Verifies that you have permission to access a remote GitHub repository.
+
+Technical example:
+
+You try to push your local script to GitHub. GitHub asks you to authenticate using an approved method, such as a Personal Access Token or SSH key.
+
+Important distinction:
+- Git configuration identifies the commit author.
+- Authentication verifies access to GitHub.
+
+2. Git commands – Day 1
+Command	Purpose
+git --version	Check Git installation
+git config --global user.name	Check configured username
+git config --global user.email	Check configured email
+git config --global --list	View Git configuration
+git clone URL	Download a repository
+cd foldername	Enter a project directory
+pwd	Display current directory
+touch hello.py	Create a file
+git status	Check repository status
+git add .	Stage changes
+git commit -m "message"	Save changes locally
+git push origin main	Upload commits to GitHub
+
+3. Your first Git workflow
+This is the workflow you practised on Day 1.
+1. Create a GitHub repository
+   
+   Create IT-Learning-and-Automation on GitHub.
+2. Clone the repository
+   git clone https://github.com/shehzan359/IT-Learning-and-Automation.git
+3. Configure Git identity
+   git config --global user.name "Your Name"
+   git config --global user.email "your-email@example.com"
+4. Create your first script
+   touch hello.py
+5. Check changes
+   git status
+6. Stage and commit
+   git add .
+   git commit -m "Added my first Python script"
+7. Push to GitHub
+   git push origin main
+
+4. Real-world IT example
+Imagine you're an IT Engineer creating a repository for your automation scripts.
+Scenario	Git/GitHub concept
+Create a project folder on Mac	Local repository
+Host the project on GitHub	Remote repository
+Download a teammate's project	Clone
+Track changes to scripts	Git
+Identify yourself as commit author	Git configuration
+Verify access to GitHub	Authentication
+Store the project online	GitHub
+
+5. Interview questions
+Question	Answer
+What is Git?	A version control system
+What is GitHub?	An online platform for hosting Git repositories
+What is a repository?	A project folder tracked by Git
+Difference between local and remote repository?	Local is on your computer; remote is hosted online
+What does git clone do?	Downloads a remote repository
+Why configure Git username and email?	To identify the author of commits
+Is GitHub the same as Git?	No
+Does Git require internet?	Local Git operations generally do not; remote operations do
