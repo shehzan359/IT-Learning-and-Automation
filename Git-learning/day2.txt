@@ -1,3 +1,261 @@
+day 2 notes
+Day 2 – Git Status & Git Log
+Day 2 learning notes Git fundamentals
+
+Today's objective: Learn how to check changes in your repository and inspect your commit history.
+
+These commands are important because, as an IT Engineer or automation engineer, you need to know what has changed, what is pending, and what work was previously saved.
+
+1. Important Git terms
+1. Git Status
+Meaning: git status shows the current state of your working directory and staging area.
+
+Command:
+
+git status
+
+Technical example:
+
+Imagine you are maintaining a Python script that checks Windows services.
+
+You modify the script, but haven't committed it yet.
+
+Run:
+
+git status
+
+Git tells you whether:
+
+Files are modified.
+
+Files are untracked.
+
+Changes are staged.
+
+Your working tree is clean.
+
+Common output:
+
+Example 1: Untracked file
+
+Untracked
+Untracked files:
+  day2.py
+Example 2: Modified file
+
+Modified
+Changes not staged for commit:
+  modified: hello.py
+Example 3: Clean repository
+
+Clean
+nothing to commit, working tree clean
+2. Git Log
+Meaning: git log displays the commit history of your repository.
+
+It helps you understand what changes were saved previously, who made them, and when.
+
+Command:
+
+git log
+
+Technical example:
+
+Suppose you maintain an IT automation repository.
+
+Your commit history might contain:
+
+commit a81d92f
+Author: Shehzan Shareef
+Message: Added Windows service monitoring
+
+commit b71d82a
+Author: Shehzan Shareef
+Message: Added Python automation script
+You can inspect the history to understand previous development work.
+
+3. Git Log Oneline
+Meaning: Displays commit history in a compact, single-line format.
+
+Command:
+
+git log --oneline
+
+Example output:
+
+a81d92f Added Windows service monitoring
+b71d82a Added Python automation script
+c91d32a Initial commit
+Why is it useful?
+
+Easier to read.
+
+Quickly identifies recent commits.
+
+Useful when troubleshooting changes.
+
+Helps you identify commit IDs.
+
+4. Commit ID (Hash)
+Meaning: Every Git commit receives a unique identifier called a commit hash.
+
+Example:
+
+a81d92f Added Windows service monitoring
+Here, a81d92f is the abbreviated commit hash.
+
+Technical example:
+
+You update a PowerShell script and accidentally introduce a problem. You can use the commit hash to identify the earlier version when investigating or reverting the change.
+
+2. Day 2 command reference
+Command
+
+Purpose
+
+git status
+
+Check current repository status
+
+git log
+
+View detailed commit history
+
+git log --oneline
+
+View compact commit history
+
+git log -5
+
+View the last five commits
+
+git show
+
+Inspect a particular commit
+
+git diff
+
+View unstaged changes
+
+git diff --staged
+
+View staged changes
+
+3. Real-world IT automation example
+Imagine you're maintaining these files:
+
+IT-Learning-and-Automation/
+│
+├── Python/
+│   └── check_services.py
+│
+├── PowerShell/
+│   └── check_disk_space.ps1
+│
+└── README.md
+You make changes to check_services.py.
+
+First, check the status:
+
+git status
+
+Then inspect your previous commits:
+
+git log
+
+For a compact view:
+
+git log --oneline
+
+You now know:
+
+What has changed.
+
+What is pending.
+
+What has already been committed.
+
+Which commits were made previously.
+
+4. Practical assignment
+Open your existing project folder:
+
+cd ~/IT-Learning-and-Automation
+
+Run these commands one by one:
+
+Step 1
+
+git status
+
+Step 2
+
+git log
+
+Step 3
+
+git log --oneline
+
+Step 4
+
+git log -5
+
+Observe the output of each command.
+
+5. Interview questions
+Question
+
+Answer
+
+What does git status do?
+
+Shows the current state of the repository
+
+What does git log do?
+
+Displays commit history
+
+Difference between git log and git log --oneline?
+
+Detailed vs compact history
+
+What is a commit hash?
+
+Unique identifier for a commit
+
+What does a clean working tree mean?
+
+No uncommitted changes in the working directory or staging area
+
+Can git status show untracked files?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 Step	Command
 1	git --version
 2	git config --global user.name "Shehzan Shareef"
