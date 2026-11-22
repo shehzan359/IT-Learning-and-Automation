@@ -88,3 +88,93 @@ A commit contains:
 
 Important:
 A commit is saved
+
+
+DAY 3 – GIT ADD & COMMIT COMMANDS
+=====================================
+
+1. NAVIGATE TO REPOSITORY
+-------------------------
+cd ~/IT-Learning-and-Automation
+
+2. CHECK REPOSITORY STATUS
+--------------------------
+git status
+
+3. CREATE A NEW FILE
+--------------------
+touch day3.txt
+
+4. ADD CONTENT TO FILE
+----------------------
+echo "Learning Git add and commit" > day3.txt
+
+5. STAGE A SPECIFIC FILE
+------------------------
+git add day3.txt
+
+6. STAGE ALL CHANGES
+--------------------
+git add .
+
+7. CHECK STAGED CHANGES
+-----------------------
+git status
+
+8. VIEW UNSTAGED CHANGES
+------------------------
+git diff
+
+9. VIEW STAGED CHANGES
+----------------------
+git diff --staged
+
+10. COMMIT STAGED CHANGES
+-------------------------
+git commit -m "Added Day 3 Git practice file"
+
+11. VIEW COMMIT HISTORY
+-----------------------
+git log
+
+12. VIEW COMMIT HISTORY IN ONE LINE
+-----------------------------------
+git log --oneline
+
+13. VIEW LAST 3 COMMITS
+----------------------
+git log --oneline -3
+
+14. INSPECT A COMMIT
+--------------------
+git show
+
+15. CHECK STAGING INDEX ENTRIES
+-------------------------------
+git ls-files --stage
+
+16. PUSH COMMITS TO GITHUB
+--------------------------
+git push origin main
+
+COMPLETE DAY 3 WORKFLOW
+=======================
+cd ~/IT-Learning-and-Automation
+touch day3.txt
+echo "Learning Git add and commit" > day3.txt
+git status
+git add day3.txt
+git status
+git diff --staged
+git commit -m "Added Day 3 Git practice file"
+git log --oneline -3
+git push origin main
+
+IMPORTANT:
+- git add = Stage changes.
+- git commit = Save changes locally.
+- git push = Upload commits to GitHub.
+- git diff = View unstaged changes.
+- git diff --staged = View staged changes.
+
+END OF DAY 3 COMMANDS
