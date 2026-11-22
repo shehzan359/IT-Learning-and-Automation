@@ -1,0 +1,24 @@
+Step	Command
+1	git --version
+2	git config --global user.name "Shehzan Shareef"
+3	git config --global user.email "YOUR_EMAIL"
+4	git clone REPOSITORY_URL
+5	cd IT-Learning-and-Automation
+6	pwd
+7	gh auth login
+8	touch hello.py
+9	git status
+10	git add .
+11	git commit -m "Added first script"
+12	git push origin main
+13	cd ~/IT-Learning-and-Automation
+14	mkdir Folder-Name
+15	touch Folder-Name/README.md
+16	ls -la
+17	git status
+18	git add .
+19	git add Folder-Name/
+20	git commit -m "Message"
+21	git push origin main
+22	git pull origin main
+23	git log --oneline

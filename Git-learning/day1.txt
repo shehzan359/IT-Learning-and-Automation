@@ -1,0 +1,11 @@
+Term	What it means
+Repository (Repo)	A folder where you store your code
+Git	Tracks changes in your files
+Commit	Saves a snapshot of your changes
+Push	Uploads your local changes to GitHub
+Pull	Downloads changes from GitHub
+Fetch	Checks for remote changes without merging them
+Clone	Downloads an entire repository
+Branch	Creates a separate workspace for changes
+Merge	Combines changes from different branches
+Pull Request	Requests to merge your changes into another branch
