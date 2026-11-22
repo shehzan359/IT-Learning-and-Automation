@@ -1,0 +1,51 @@
+DAY 04 – GIT PUSH, AUTHENTICATION & REMOTE REPOSITORIES
+
+==================================================
+1. WHAT IS GIT PUSH?
+==================================================
+
+Git push uploads local commits from your computer to a remote repository such as GitHub.
+
+Example:
+git push origin main
+
+Meaning:
+- git push = Upload local commits.
+- origin = Remote repository name.
+- main = Branch where commits are uploaded.
+
+==================================================
+2. WHAT IS A REMOTE REPOSITORY?
+==================================================
+
+A remote repository is a version of your Git repository hosted on another server, such as GitHub.
+
+Example:
+https://github.com/shehzan359/IT-Learning-and-Automation
+
+Common remote name:
+origin
+
+Check configured remote:
+git remote -v
+
+Add a remote:
+git remote add origin REPOSITORY_URL
+
+Change remote URL:
+git remote set-url origin REPOSITORY_URL
+
+==================================================
+3. WHAT IS GIT AUTHENTICATION?
+==================================================
+
+Authentication verifies your identity when connecting to GitHub.
+
+GitHub does not support normal account passwords for Git operations over HTTPS.
+
+Common authentication methods:
+- Personal Access Token (PAT)
+- SSH key
+- Git Credential Manager
+
+IMPORTANT
