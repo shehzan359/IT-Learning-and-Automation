@@ -1,0 +1,90 @@
+DAY 3 – GIT ADD & COMMIT
+==============================
+
+OBJECTIVE:
+Understand Git staging area, git add, git commit and how Git stores changes locally.
+
+1. WORKING DIRECTORY
+--------------------
+Meaning:
+The working directory is the project folder where you create, modify or delete files.
+
+Technical Example:
+An IT Automation Engineer creates a Python script called check_services.py to monitor Windows services.
+
+The file exists in the working directory before being staged.
+
+2. STAGING AREA
+---------------
+Meaning:
+The staging area is an intermediate area where you select changes that should be included in your next commit.
+
+Technical Example:
+You modify three files:
+- check_services.py
+- README.md
+- config.py
+
+You want to commit only the Python script and README.
+
+You stage only those two files using git add.
+
+Why is it important?
+- Select specific changes for a commit.
+- Keep commits organised.
+- Avoid committing unrelated changes.
+- Review changes before committing.
+
+Technical Detail:
+The staging area is maintained inside the hidden .git directory.
+Its index information is stored in the file:
+
+.git/index
+
+The original project files do not physically move into the staging area.
+
+3. GIT ADD
+----------
+Meaning:
+Git add stages selected file changes for the next commit.
+
+Command:
+git add filename
+
+Example:
+git add check_services.py
+
+To stage all changes in the current directory:
+git add .
+
+Technical Example:
+You update a PowerShell script for disk-space monitoring.
+You use git add to prepare the updated script for committing.
+
+4. GIT COMMIT
+-------------
+Meaning:
+Git commit saves the staged changes as a snapshot in your local Git repository.
+
+Command:
+git commit -m "Your commit message"
+
+Example:
+git commit -m "Added Windows service monitoring"
+
+What happens during a commit?
+- Git reads the staged snapshot.
+- Git creates objects representing the committed content.
+- Git creates a commit object containing metadata.
+- Git updates the current branch to point to the new commit.
+
+A commit contains:
+- Commit ID (hash)
+- Author information
+- Date
+- Commit message
+- Project snapshot (tree)
+- Parent commit reference, if applicable
+
+Important:
+A commit is saved
